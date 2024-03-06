@@ -24,6 +24,7 @@ const DesktopMenu = ({ userData }: DesktopMenuProps) => {
       toast.success("Logout successfully");
       router.refresh();
       router.push("/login");
+      window.location.reload();
     } catch (error) {
       console.error("Logout failed", error);
     }
